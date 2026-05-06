@@ -5,21 +5,37 @@
   box-sizing: border-box; 
 }
 
+a{
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color:hls(0, 0%, 20%);
+}
 /* Page styles */
 body {  
   color: white;
   font-size: 14px;
+  font-family: "inter", sans-serif;
   background-color: black;
 }
 .name {
     color: hsl(0, 0%, 100%);
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  
 }
 .location {
   color: hsl(75, 94%, 57%);
-  font-size: 18px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 .bio {
@@ -32,7 +48,7 @@ body {
 .card {
   background-color: hsl(0, 0%, 12%);
   color: white;       /* ensure text inside card is visible */
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   text-align: center;
   width: 250px;
@@ -42,12 +58,13 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  object-fit: cover;
-  display: block;
- margin:0 auto 15px;
+  overflow: hidden; 
+ margin-inline: auto;
 }
-
-section a {
-  display: block;
-  margin: 10px 0;
+.smedia {
+  margin-top: 20px;
+}
+.social-link {
+  color: blue;
+  text-align: left;
 }
