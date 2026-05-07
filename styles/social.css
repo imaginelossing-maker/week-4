@@ -64,7 +64,11 @@ body {
 .smedia {
   margin-top: 20px;
 }
-.social-link {
-  color: blue;
-  text-align: left;
+.back {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+.back:hover {
+  background-color: green;
+  color:black;
 }
