@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    :root {
+    /* Color variables */
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+
+    /* Fontweight variables */
+    --light: 400;
+    --medium: 600;
+    --bold: 700;
+    /* font family styles */
+    --young:"young-serif", serif;
+    --outfit:"outfit", sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card{
+    width: 50%;
+    background-color: var(--white);
+    margin-inline: auto;
+    padding: 50px;
+    border-radius: 20px;
+}
+body {
+  background-color: var(--stone-100);
+  padding: 100px;
+  font-family: var(--outfit);
+} 
+h1 {
+    font-family: var(--young);
+}
+.main p {
+    font-family: var(--outfit);
+}
+.main h3 {
+    font-family: var(--outfit);
+    color: var(--rose-800);
+}
+
+.heading {
+    color: var(--brown-800);
+    font-family: var(--young);
+   
+}
