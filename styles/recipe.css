@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-    :root {
+
+html {
+    font-size: 16px;
+}
+
+:root {
     /* Color variables */
     --white: hsl(0, 0%, 100%);
     --stone-100: hsl(30, 54%, 90%);
@@ -18,40 +23,121 @@
     --light: 400;
     --medium: 600;
     --bold: 700;
-    /* font family styles */
-    --young:"young-serif", serif;
-    --outfit:"outfit", sans-serif;
+
+    /* Fontfamily variables */
+    --young: "Young Serif", serif;
+    --outfit: "Outfit", sans-serif;
 }
+
 img {
     width: 100%;
     object-fit: cover;
 }
 
-.card{
+body {
+    padding: 100px;
+    background-color: var(--stone-100);
+    font-family: var(--outfit);
+    font-size: 1rem;
+    color: var(--stone-600)
+}
+
+h1 {
+    font-family: var(--young);
+    color: var(--stone-900);
+}
+
+ol,
+ul {
+    list-style-position: inside;
+}
+
+ol li,
+ul li {
+    padding: 8px ;
+}
+.nutrition {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.nutrition td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+.nutrition td:first-child {
+  font-weight: bold;
+}
+
+
+.card {
     width: 50%;
     background-color: var(--white);
     margin-inline: auto;
     padding: 50px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
 }
-body {
-  background-color: var(--stone-100);
-  padding: 100px;
-  font-family: var(--outfit);
-} 
-h1 {
-    font-family: var(--young);
+
+.picture {
+    border-radius: 10px;
+    overflow: hidden;
 }
-.main p {
-    font-family: var(--outfit);
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
 }
+
 .main h3 {
-    font-family: var(--outfit);
     color: var(--rose-800);
+    margin-bottom: 20px;
+}
+
+.main p {
+    line-height: 1.5;
+}
+
+.main div {
+    background-color: var(--rose-50);
+    padding: 40px;
+    border-radius: 20px;
 }
 
 .heading {
-    color: var(--brown-800);
     font-family: var(--young);
-   
+    color: var(--brown-800)
+}
+
+.method {
+    font-weight: var(--bold);
+}
+
+.section {
+    padding-block: 40px;
+    border-bottom: 2px solid var(--stone-150);
+     padding-bottom: 20px; 
+}
+
+
+/* display */
+@media screen and (max-width:500px) {
+    body{
+       padding: 0;
+    } 
+}.card{
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+}
+.picture{
+    border-radius: 0;
+}
+.section, main{
+    padding: 20px;
 }
